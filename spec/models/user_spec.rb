@@ -24,7 +24,15 @@ RSpec.describe User, type: :model do
         @user.last_name_j = '漢字ひらがなカタカナ'
         expect(@user).to be_valid
       end
+      it '全て揃っていれば登録できる' do
+        @user.password = 'abcdef123456'
+        @user.password_confirmation = 'abcdef123456'
+        @user.family_name_j = '漢字ひらがなカタカナ'
+        @user.last_name_j = '漢字ひらがなカタカナ'
+        expect(@user).to be_valid
+      end
     end
+    
     context '新規登録できない時' do
       it 'nicknameが空だと登録できない' do
         @user.nickname = ''
