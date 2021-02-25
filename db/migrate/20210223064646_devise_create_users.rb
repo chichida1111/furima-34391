@@ -8,9 +8,9 @@ class DeviseCreateUsers < ActiveRecord::Migration[6.0]
       t.string :encrypted_password, null: false, unique: true
       t.string :nickname,           null: false
       t.string :last_name_j,        null: false
-      t.string :family_name_j,      null: false
+      t.string :first_name_j,       null: false
       t.string :last_name_k,        null: false
-      t.string :family_name_k,      null: false
+      t.string :first_name_k,       null: false
       t.date   :birthday,           null: false
 
       ## Recoverable
