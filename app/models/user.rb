@@ -18,9 +18,5 @@ class User < ApplicationRecord
   end
 
   validates :nickname, presence: true
-  validates :last_name_j, presence: true
-  validates :family_name_j, presence: true
-  validates :last_name_k, presence: true
-  validates :family_name_k, presence: true
   validates :birthday, presence: true
 end
