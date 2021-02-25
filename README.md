@@ -6,9 +6,9 @@
 | email              | string  | null: false, unique: true |
 | encrypted_password | string  | null: false               |
 | last_name_j        | string  | null: false               |
-| family_name_j      | string  | null: false               |
+| first_name_j       | string  | null: false               |
 | last_name_k        | string  | null: false               |
-| family_name_k      | string  | null: false               |
+| first_name_k       | string  | null: false               |
 | birthday           | date    | null: false               |
 <!-- _jは漢字、_kはカタカナを意味する -->
 
