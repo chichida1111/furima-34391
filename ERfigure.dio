@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <mxfile host="65bd71144e" modified="2021-02-25T04:03:12.978Z" agent="5.0 (Macintosh; Intel Mac OS X 11_2_1) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.53.1 Chrome/87.0.4280.141 Electron/11.2.1 Safari/537.36" etag="tbbJgeG0TrJ5Swh8k0XE" version="14.2.4" type="embed">
     <diagram id="zeJyQ6eXwgmGvAGt_OIW" name="ページ1">
         <mxGraphModel dx="395" dy="425" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
@@ -6,6 +7,16 @@
                 <mxCell id="1" parent="0"/>
                 <mxCell id="2" value="users" style="shape=table;startSize=20;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" parent="1" vertex="1">
                     <mxGeometry x="548" y="156" width="160" height="220" as="geometry">
+=======
+<mxfile host="65bd71144e" modified="2021-02-23T05:58:10.739Z" agent="5.0 (Macintosh; Intel Mac OS X 11_2_1) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.53.1 Chrome/87.0.4280.141 Electron/11.2.1 Safari/537.36" version="14.2.4" etag="uywDpHL2VL-ukIkiX3As" type="embed">
+    <diagram id="zeJyQ6eXwgmGvAGt_OIW" name="ページ1">
+        <mxGraphModel dx="1128" dy="570" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="users" style="shape=table;startSize=20;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" vertex="1" parent="1">
+                    <mxGeometry x="612" y="156" width="160" height="220" as="geometry">
+>>>>>>> Stashed changes
                         <mxRectangle x="20" y="150" width="60" height="30" as="alternateBounds"/>
                     </mxGeometry>
                 </mxCell>
@@ -90,8 +101,13 @@
                 <mxCell id="213" value="birthday" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" parent="211" vertex="1">
                     <mxGeometry x="30" width="130" height="20" as="geometry"/>
                 </mxCell>
+<<<<<<< Updated upstream
                 <mxCell id="59" value="comments" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" parent="1" vertex="1">
                     <mxGeometry x="428" y="446" width="130" height="126" as="geometry"/>
+=======
+                <mxCell id="59" value="comments" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" vertex="1" parent="1">
+                    <mxGeometry x="492" y="446" width="130" height="126" as="geometry"/>
+>>>>>>> Stashed changes
                 </mxCell>
                 <mxCell id="60" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;top=0;left=0;bottom=1;right=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="59" vertex="1">
                     <mxGeometry y="30" width="130" height="30" as="geometry"/>
@@ -129,8 +145,13 @@
                 <mxCell id="71" value="item_display" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" parent="69" vertex="1">
                     <mxGeometry x="30" width="100" height="20" as="geometry"/>
                 </mxCell>
+<<<<<<< Updated upstream
                 <mxCell id="73" value="item_displays" style="shape=table;startSize=15;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" parent="1" vertex="1">
                     <mxGeometry x="208" y="321" width="130" height="250" as="geometry">
+=======
+                <mxCell id="73" value="item_displays" style="shape=table;startSize=15;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" vertex="1" parent="1">
+                    <mxGeometry x="272" y="321" width="130" height="250" as="geometry">
+>>>>>>> Stashed changes
                         <mxRectangle x="20" y="150" width="60" height="30" as="alternateBounds"/>
                     </mxGeometry>
                 </mxCell>
@@ -233,8 +254,13 @@
                 <mxCell id="261" value="status_id" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" parent="259" vertex="1">
                     <mxGeometry x="30" width="100" height="20" as="geometry"/>
                 </mxCell>
+<<<<<<< Updated upstream
                 <mxCell id="144" value="item_parchases" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" parent="1" vertex="1">
                     <mxGeometry x="210" y="76" width="130" height="105" as="geometry"/>
+=======
+                <mxCell id="144" value="item_parchases" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" vertex="1" parent="1">
+                    <mxGeometry x="274" y="76" width="130" height="105" as="geometry"/>
+>>>>>>> Stashed changes
                 </mxCell>
                 <mxCell id="145" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;top=0;left=0;bottom=1;right=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="144" vertex="1">
                     <mxGeometry y="30" width="130" height="30" as="geometry"/>
@@ -263,8 +289,13 @@
                 <mxCell id="153" value="user" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" parent="151" vertex="1">
                     <mxGeometry x="30" width="100" height="20" as="geometry"/>
                 </mxCell>
+<<<<<<< Updated upstream
                 <mxCell id="163" value="ship_addresses" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" parent="1" vertex="1">
                     <mxGeometry y="36" width="140" height="210" as="geometry"/>
+=======
+                <mxCell id="163" value="ship_addresses" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" vertex="1" parent="1">
+                    <mxGeometry x="64" y="36" width="140" height="210" as="geometry"/>
+>>>>>>> Stashed changes
                 </mxCell>
                 <mxCell id="164" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;top=0;left=0;bottom=1;right=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="163" vertex="1">
                     <mxGeometry y="30" width="140" height="30" as="geometry"/>
@@ -340,38 +371,38 @@
                 </mxCell>
                 <mxCell id="234" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;startArrow=ERzeroToOne;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="60" edge="1">
                     <mxGeometry width="100" height="100" relative="1" as="geometry">
-                        <mxPoint x="610" y="376" as="sourcePoint"/>
-                        <mxPoint x="190" y="606" as="targetPoint"/>
+                        <mxPoint x="674" y="376" as="sourcePoint"/>
+                        <mxPoint x="254" y="606" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="240" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="173" target="148" edge="1">
                     <mxGeometry width="100" height="100" relative="1" as="geometry">
-                        <mxPoint x="322" y="336" as="sourcePoint"/>
-                        <mxPoint x="660" y="176" as="targetPoint"/>
+                        <mxPoint x="386" y="336" as="sourcePoint"/>
+                        <mxPoint x="724" y="176" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="241" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;startArrow=ERzeroToOne;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.992;entryY=-0.05;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="199" target="148" edge="1">
                     <mxGeometry width="100" height="100" relative="1" as="geometry">
-                        <mxPoint x="390" y="256" as="sourcePoint"/>
-                        <mxPoint x="470" y="306" as="targetPoint"/>
+                        <mxPoint x="454" y="256" as="sourcePoint"/>
+                        <mxPoint x="534" y="306" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="248" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;startArrow=ERzeroToOne;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="60" edge="1">
                     <mxGeometry width="100" height="100" relative="1" as="geometry">
-                        <mxPoint x="340" y="491" as="sourcePoint"/>
-                        <mxPoint x="571" y="466" as="targetPoint"/>
+                        <mxPoint x="404" y="491" as="sourcePoint"/>
+                        <mxPoint x="635" y="466" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="262" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;startArrow=ERzeroToOne;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="208" target="83" edge="1">
                     <mxGeometry width="100" height="100" relative="1" as="geometry">
-                        <mxPoint x="558" y="367" as="sourcePoint"/>
-                        <mxPoint x="348.96000000000004" y="226" as="targetPoint"/>
+                        <mxPoint x="622" y="367" as="sourcePoint"/>
+                        <mxPoint x="412.96000000000004" y="226" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="263" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.308;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="144" target="73" edge="1">
                     <mxGeometry width="100" height="100" relative="1" as="geometry">
-                        <mxPoint x="220" y="216" as="sourcePoint"/>
-                        <mxPoint x="290" y="216" as="targetPoint"/>
+                        <mxPoint x="284" y="216" as="sourcePoint"/>
+                        <mxPoint x="354" y="216" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
             </root>
