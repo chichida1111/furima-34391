@@ -2,6 +2,7 @@ class ItemDisplaysController < ApplicationController
   before_action :authenticate_user!, except: [:show, :index]
   
   def index
+    @item_displays = ItemDisplay.all
   end
  
   def new
@@ -21,4 +22,5 @@ class ItemDisplaysController < ApplicationController
   def item_display_params
     params.require(:item_display).permit(:image,:item_name,:item_explain,:category_id,:status_id,:ship_burden_id,:ship_source_id,:ship_date_id,:item_price).merge(user_id: current_user.id)
   end
+
 end
