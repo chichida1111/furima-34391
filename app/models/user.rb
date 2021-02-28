@@ -22,4 +22,6 @@ class User < ApplicationRecord
     validates :birthday
   end
 
+  has_many :item_displays
+
 end
