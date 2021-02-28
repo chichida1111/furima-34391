@@ -3,12 +3,11 @@ FactoryBot.define do
       item_name      { Faker::Name.initials(number: 10) } 
       item_explain   { Faker::Lorem.word }   
       item_price     { Faker::Commerce.price(range: 300..9999999) } 
-      ship_burden_id {"2"}
-      ship_source_id {"1"}
-      ship_date_id   {"2"}
-      category_id    {"2"}
-      status_id      {"2"}
-      user_id        {"1"}
+      ship_burden_id {2}
+      ship_source_id {1}
+      ship_date_id   {2}
+      category_id    {2}
+      status_id      {2}
       association :user
 
       after(:build) do |item_display|
