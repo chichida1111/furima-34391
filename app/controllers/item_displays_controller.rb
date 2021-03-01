@@ -4,6 +4,10 @@ class ItemDisplaysController < ApplicationController
   def index
     @item_displays = ItemDisplay.order(id: :DESC)
   end
+
+  def show
+    @item_display = ItemDisplay.find(params[:id])
+  end
  
   def new
     @item_display = ItemDisplay.new
