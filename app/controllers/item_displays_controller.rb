@@ -7,6 +7,15 @@ class ItemDisplaysController < ApplicationController
     @item_displays = ItemDisplay.order(id: :DESC)
   end
 
+  def destroy
+    item_display = ItemDisplay.find(params[:id])
+    item_display.destroy
+    redirect_to root_path
+    unless item_display.user_id == current_user.id
+      redirect_to root_path
+    end
+  end
+
   def show
   end
 
