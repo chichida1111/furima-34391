@@ -15,7 +15,7 @@ class ItemDisplaysController < ApplicationController
 
   def update
      if @item_display.update(item_display_params)
-       redirect_to item_display_path(@item_display.id), method: :get
+       redirect_to item_display_path(@item_display.id)
      else
       render :edit
      end
