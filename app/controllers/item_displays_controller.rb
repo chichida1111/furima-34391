@@ -8,6 +8,22 @@ class ItemDisplaysController < ApplicationController
   def show
     @item_display = ItemDisplay.find(params[:id])
   end
+
+  def edit
+    @item_display = ItemDisplay.find(params[:id])
+    unless @item_display.user_id == current_user.id
+      redirect_to root_path
+    end
+  end
+
+  def update
+    @item_display = ItemDisplay.find(params[:id])
+     if @item_display.update(item_display_params)
+       redirect_to item_display_path(@item_display.id), method: :get
+     else
+      render :edit
+     end
+  end
  
   def new
     @item_display = ItemDisplay.new
