@@ -2,7 +2,7 @@ class ItemDisplaysController < ApplicationController
   before_action :authenticate_user!, except: [:show, :index]
   
   def index
-    @item_displays = ItemDisplay.all.order(:id)
+    @item_displays = ItemDisplay.all.order(id: :DESC)
   end
  
   def new
