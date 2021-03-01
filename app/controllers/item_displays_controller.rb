@@ -1,6 +1,6 @@
 class ItemDisplaysController < ApplicationController
   before_action :authenticate_user!, except: [:show, :index]
-  before_action :set_item_display, only: [:show, :edit, :update ]
+  before_action :set_item_display, only: [:show, :edit, :update, :destroy ]
   before_action :user_is_seller?, only: [:edit, :update ]
   
   def index
@@ -8,12 +8,11 @@ class ItemDisplaysController < ApplicationController
   end
 
   def destroy
-    item_display = ItemDisplay.find(params[:id])
-    item_display.destroy
-    redirect_to root_path
-    unless item_display.user_id == current_user.id
+    unless @item_display.user_id == current_user.id
       redirect_to root_path
     end
+    @item_display.destroy
+    redirect_to root_path
   end
 
   def show
