@@ -2,6 +2,7 @@ class ItemDisplay < ApplicationRecord
 
   belongs_to :user
   has_one_attached :image
+  has_one    :item_purchase
   
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to :category
@@ -21,7 +22,6 @@ class ItemDisplay < ApplicationRecord
 
   validates :item_price, presence: true, numericality: { with: /^[0-9]+$/ }
   validates_inclusion_of :item_price, in: 300..9999999
-
 
   with_options presence: true do
     validates :item_name

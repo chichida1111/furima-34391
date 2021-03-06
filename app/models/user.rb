@@ -23,5 +23,6 @@ class User < ApplicationRecord
   end
 
   has_many :item_displays
+  has_many :item_purchases
 
 end

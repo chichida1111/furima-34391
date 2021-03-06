@@ -126,10 +126,17 @@
     <%= link_to '新規投稿商品', "#", class: "subtitle" %>
     <ul class='item-lists'>
       <% if @item_displays.present? %>
-      <li class='list'>
        <% @item_displays.each do |item_display| %>
+      <li class='list'>
         <%= link_to item_display_path(item_display.id) do %>
+        <div class='item-img-content'>
          <%= image_tag item_display.image, class: "item-img" %>
+          <% if item_display.item_purchase.present? %>
+           <div class="sold-out">
+            <span>Sold Out!!</span>
+           </div>
+          <% end %>
+        </div>
         <div class='item-info'>
           <h3 class='item-name'>
            <%= item_display.item_name %> 

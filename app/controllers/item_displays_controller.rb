@@ -2,7 +2,8 @@ class ItemDisplaysController < ApplicationController
   before_action :authenticate_user!, except: [:show, :index]
   before_action :set_item_display, only: [:show, :edit, :update, :destroy ]
   before_action :user_is_seller?, only: [:edit, :update, :destroy ]
-  
+  before_action :item_is_purchased?, only: [:edit, :update ]
+
   def index
     @item_displays = ItemDisplay.order(id: :DESC)
   end
@@ -52,6 +53,12 @@ class ItemDisplaysController < ApplicationController
    unless @item_display.user_id == current_user.id
     redirect_to root_path
    end
+  end
+
+  def  item_is_purchased?
+    if @item_display.item_purchase.present?
+      redirect_to root_path
+    end
   end
 
 
