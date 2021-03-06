@@ -98,6 +98,11 @@ RSpec.describe ItemPurchaseShipAddress, type: :model do
         @item_purchase_ship_address.valid?
         expect(@item_purchase_ship_address.errors.full_messages).to include("Phone number is invalid. Within 11 digits")
       end
+      it '電話番号が文字列（英数混合）だと登録できない' do
+        @item_purchase_ship_address.phone_number = "090phone123"
+        @item_purchase_ship_address.valid?
+        expect(@item_purchase_ship_address.errors.full_messages).to include("Phone number is invalid. Within 11 digits")
+      end
       it '電話番号が数値（全角）だと登録できない' do
         @item_purchase_ship_address.phone_number = "１２３４５６７８９０１"
         @item_purchase_ship_address.valid?

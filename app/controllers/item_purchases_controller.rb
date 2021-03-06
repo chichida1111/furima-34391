@@ -38,9 +38,7 @@ class ItemPurchasesController < ApplicationController
   end
 
   def user_is_seller_item_is_purchased?
-   if @item_display.user_id == current_user.id
-    redirect_to root_path
-   elsif @item_display.item_purchase.present?
+   if @item_display.user_id == current_user.id || @item_display.item_purchase.present?
     redirect_to root_path
    end
   end
