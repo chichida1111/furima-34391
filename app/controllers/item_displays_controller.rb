@@ -16,6 +16,9 @@ class ItemDisplaysController < ApplicationController
   end
 
   def edit
+    if @item_display.item_purchase.present?
+      redirect_to root_path
+    end
   end
 
   def update

@@ -15,12 +15,12 @@
 ### Association
 
 - has_many  :item_displays
-- has_many  :comments
+<!-- - has_many  :comments -->
 - has_many  :item_parchases
 
 
 
-## comments テーブル
+<!-- ## comments テーブル
 
 | Column          | Type       | Options                        |
 | --------------- | ---------- | ------------------------------ |
@@ -31,7 +31,7 @@
 ### Association
 
 - belongs_to :user
-- belongs_to :item_display 
+- belongs_to :item_display  -->
 
 
 
@@ -46,14 +46,14 @@
 | ship_date_id   | integer    | null: false                    |
 | item_price     | integer    | null: false                    |
 | user           | references | null: false, foreign_key: true |
-| comment        | references | null: false, foreign_key: true |
+<!-- | comment        | references | null: false, foreign_key: true | -->
 | category_id    | integer    | null: false                    |
 | status_id      | integer    | null: false                    |
 
 ### Association
 
 - belongs_to :user
-- has_many   :comments
+<!-- - has_many   :comments -->
 - has_one    :item_purchase
 
 
@@ -74,7 +74,7 @@
 
 
 
-## ship_addreses テーブル
+## ship_addresses テーブル
 
 | Column           | Type       | Options                        |
 | ---------------- | ---------- | ------------------------------ |
@@ -84,7 +84,7 @@
 | street           | string     | null: false                    |
 | building_name    | string     |                                |
 | item_parchase    | references | null: false, foreign_key: true |
-| phone_number     | integer    | null: false                    |
+| phone_number     | string     | null: false                    |
 
 ### Association
 
