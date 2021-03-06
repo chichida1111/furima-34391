@@ -5,8 +5,7 @@ class ItemPurchasesController < ApplicationController
   def index
     if @item_display.user_id == current_user.id
       redirect_to root_path
-    end
-    if @item_display.item_purchase.present? and return
+    elsif @item_display.item_purchase.present?
       redirect_to root_path
     end
     @item_purchase_ship_address = ItemPurchaseShipAddress.new

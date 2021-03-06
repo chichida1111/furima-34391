@@ -2,7 +2,10 @@ require 'rails_helper'
 
 RSpec.describe ItemPurchaseShipAddress, type: :model do
   before do
-    @item_purchase_ship_address = FactoryBot.build(:item_purchase_ship_address)
+    item_display = FactoryBot.create(:item_display)
+    user = FactoryBot.create(:user)
+    @item_purchase_ship_address = FactoryBot.build(:item_purchase_ship_address, item_display_id: item_display.id, user_id: user.id )
+    sleep(0.5)
   end
 
   describe '出品購入情報' do
@@ -29,6 +32,10 @@ RSpec.describe ItemPurchaseShipAddress, type: :model do
       end
       it '電話番号を11桁で入力すると登録できる' do
         @item_purchase_ship_address.phone_number = "12345678901"
+        expect(@item_purchase_ship_address).to be_valid
+      end
+      it '建物名が空でも登録できる' do
+        @item_purchase_ship_address.building_name = ""
         expect(@item_purchase_ship_address).to be_valid
       end
       it '全て揃っていれば登録できる' do
@@ -80,6 +87,31 @@ RSpec.describe ItemPurchaseShipAddress, type: :model do
         @item_purchase_ship_address.phone_number = "123456789012"
         @item_purchase_ship_address.valid?
         expect(@item_purchase_ship_address.errors.full_messages).to include("Phone number is invalid. Within 11 digits")
+      end
+      it '電話番号が文字列（全角）だと登録できない' do
+        @item_purchase_ship_address.phone_number = "電話番号"
+        @item_purchase_ship_address.valid?
+        expect(@item_purchase_ship_address.errors.full_messages).to include("Phone number is invalid. Within 11 digits")
+      end
+      it '電話番号が文字列（半角英語）だと登録できない' do
+        @item_purchase_ship_address.phone_number = "phonenumber"
+        @item_purchase_ship_address.valid?
+        expect(@item_purchase_ship_address.errors.full_messages).to include("Phone number is invalid. Within 11 digits")
+      end
+      it '電話番号が数値（全角）だと登録できない' do
+        @item_purchase_ship_address.phone_number = "１２３４５６７８９０１"
+        @item_purchase_ship_address.valid?
+        expect(@item_purchase_ship_address.errors.full_messages).to include("Phone number is invalid. Within 11 digits")
+      end
+      it 'user_idが空だと登録できない' do
+        @item_purchase_ship_address.user_id = ""
+        @item_purchase_ship_address.valid?
+        expect(@item_purchase_ship_address.errors.full_messages).to include("User can't be blank")
+      end
+      it 'item_display_idが空だと登録できない' do
+        @item_purchase_ship_address.item_display_id = ""
+        @item_purchase_ship_address.valid?
+        expect(@item_purchase_ship_address.errors.full_messages).to include("Item display can't be blank")
       end
       it 'tokenが空では登録できないこと' do
         @item_purchase_ship_address.token = nil

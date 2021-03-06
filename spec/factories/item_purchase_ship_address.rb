@@ -5,9 +5,6 @@ FactoryBot.define do
     city             {"市町村"}
     street           {"番地"}
     phone_number     {"09012345678"}
-    item_purchase_id {1}
-    item_display_id  {1}
-    user_id          {1}
     token            {"tok_abcdefghijk00000000000000000"}
   end
 end
